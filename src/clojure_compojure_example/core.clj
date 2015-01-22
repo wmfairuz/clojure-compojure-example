@@ -1,6 +1,7 @@
-(ns clojure-compojure-example.core)
+(ns clojure-compojure-example.core
+  (:require [compojure.core :refer :all]
+            [compojure.route :as route]))
 
-(defn foo
-  "I don't do a whole lot."
-  [x]
-  (println x "Hello, World!"))
+(defroutes app-routes
+  (GET "/" [] "Hello World")
+  (route/not-found "Not Found"))
