@@ -4,7 +4,10 @@ A Clojure library designed to ... well, that part is up to you.
 
 ## Usage
 
-FIXME
+=> (use 'ring.adapter.jetty)
+=> (use 'clojure-compojure-example.core.core)
+=> (run-jetty app-routes {:port 3000})
+
 
 ## License
 
